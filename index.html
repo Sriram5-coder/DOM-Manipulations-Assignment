@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM Manipulations</title>
+</head>
+
+
+
+<script type="text/javascript">
+	
+
+	function paramouseover() {
+		document.getElementById('para').style.color= 'red';
+	}
+
+
+
+	function paramouseout() {
+		document.getElementById('para').style.color= 'black';
+	}
+
+
+	function buttonmouseover(){
+		document.getElementById('xyz').innerHTML="Campus Placements";
+	}
+
+	function buttonmouseout(){
+		document.getElementById('xyz').innerHTML="Hero Vired";
+	}
+
+
+	function inptonclick(){
+		document.getElementById('qqq').value=document.getElementById('para').innerHTML;
+	}
+
+
+
+
+	function listmouseover() {
+		document.getElementById('lst').style.color= 'pink';
+		document.getElementById('lst').style.fontWeight='bold';
+	}
+
+
+	function listmouseout(){
+		document.getElementById('lst').style.color= 'black';
+		document.getElementById('lst').style.fontWeight='normal';
+
+		}
+
+
+	
+
+
+
+</script>
+<body>
+	
+
+<br>
+	<p id="para" onmouseover='paramouseover()' onmouseout="paramouseout()">Hero Vired is a premium LearnTech company offering industry-relevant programs in partnership with world-class institutions to create the change-makers of tomorrow. Part of the rich legacy of the Hero Group, we aim to transform the skilling landscape in India by creating programs delivered by leading industry practitioners that help professionals and students enhance their skills and employability.</p>
+<br>
+<br>
+<br>
+
+<button id='xyz'style="background-color: skyblue;" onmouseover="buttonmouseover()" onmouseout= "buttonmouseout()">Hero Vired</button>
+<br>
+<br>
+<br>
+
+
+<input id='qqq' type="text"name=""><button id='sam'style="color:navajowhite;" onclick="inptonclick()">Text</button>
+	<br>
+<br>
+	<br>
+
+
+
+
+<ul id="lst" onmouseover='listmouseover()' onmouseout="listmouseout()">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JAVASCRIPT</li>
+
+</ul>
+
+
+</body>
+
+</html>
